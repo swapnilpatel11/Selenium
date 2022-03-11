@@ -11,8 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GreenCartApp {
 
 	public static void main(String[] args) throws InterruptedException {
-		// Problem: Add items into cart for eCommerce App
-		
+		// Problem: Add Multiple items items into cart for eCommerce App
+		// Amazon Interview question
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Swapn\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
