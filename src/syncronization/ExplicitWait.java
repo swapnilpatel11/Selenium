@@ -31,6 +31,7 @@ public class ExplicitWait {
 				addItems(driver,itemsNeeded); //we create this method which is count as Utility which we can reuse in any class 
 				driver.findElement(By.cssSelector("img[alt='Cart']")).click();
 				driver.findElement(By.xpath("//button[normalize-space()='PROCEED TO CHECKOUT']")).click();
+				
 				w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode"))); //Explicit wait for locator at this step
 				driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
 				driver.findElement(By.cssSelector(".promoBtn")).click();
