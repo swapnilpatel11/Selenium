@@ -1,5 +1,6 @@
 package ajaxAndaction;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -17,6 +18,7 @@ public class ParentChildActions {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/#");
 		driver.findElement(By.cssSelector(".blinkingText")).click();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//This step collects all child windows open by click on link
 		Set<String> windows = driver.getWindowHandles(); //[parentid,child id]
 		//Now we use iterator to go to next window open by click on link
