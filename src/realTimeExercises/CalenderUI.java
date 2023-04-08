@@ -12,6 +12,7 @@ public class CalenderUI {
 	public static void main(String[] args) {
 		// Here we see how to deal with calendar
 		//This code is not working in month selection 
+		//Website host is deleted so its failing
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Swapn\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
